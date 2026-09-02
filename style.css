@@ -1,0 +1,237 @@
+/* =====================================
+   LOOK CREATE - MAIN STYLE
+   ===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff8f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #8e5a6d;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    font-size: 38px;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+/* Navigation */
+nav {
+    background: #f3d9df;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    color: #5c3545;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px 12px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #8e5a6d;
+    color: white;
+}
+
+/* Main Container */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.container h1 {
+    color: #8e5a6d;
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+
+.container > p {
+    margin-bottom: 30px;
+}
+
+/* Cards */
+.cards,
+.dress-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Common Card */
+.card,
+.dress {
+    background: white;
+    width: 230px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+    transition: 0.3s;
+}
+
+.card:hover,
+.dress:hover {
+    transform: translateY(-8px);
+}
+
+/* Card Heading */
+.card h2,
+.dress h2 {
+    color: #8e5a6d;
+    margin: 12px 0;
+}
+
+/* Dress Image Area */
+.photo {
+    height: 180px;
+    background: #f5e2e7;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    overflow: hidden;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Buttons */
+button {
+    background: #8e5a6d;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    margin-top: 12px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #6f4354;
+    transform: scale(1.05);
+}
+
+/* About Section */
+.about {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.about h1 {
+    color: #8e5a6d;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 600px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+/* Footer */
+footer {
+    background: #8e5a6d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px auto;
+        width: 80%;
+    }
+
+    .container {
+        padding: 25px 15px;
+    }
+
+    .container h1,
+    .about h1 {
+        font-size: 28px;
+    }
+
+    .card,
+    .dress {
+        width: 90%;
+        max-width: 320px;
+    }
+
+    .photo {
+        height: 200px;
+    }
+}
