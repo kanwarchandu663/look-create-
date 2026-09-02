@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Office Look | Look Create</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f1ed;
+            color: #333;
+        }
+
+        header {
+            background: #3f4a45;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 38px;
+        }
+
+        header p {
+            font-size: 17px;
+        }
+
+        nav {
+            background: #ffffff;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #3f4a45;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        .hero h2 {
+            font-size: 32px;
+            color: #3f4a45;
+        }
+
+        .looks {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            width: 280px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 18px;
+            text-align: center;
+        }
+
+        .card h3 {
+            color: #3f4a45;
+        }
+
+        .card p {
+            line-height: 1.6;
+        }
+
+        .tips {
+            background: #dfe5df;
+            padding: 35px 20px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .tips ul {
+            display: inline-block;
+            text-align: left;
+            line-height: 2;
+        }
+
+        footer {
+            background: #3f4a45;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 7px;
+            }
+
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>LOOK CREATE</h1>
+    <p>Office Look Collection</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="traditional.html">Traditional</a>
+    <a href="western.html">Western</a>
+    <a href="office.html">Office</a>
+    <a href="party.html">Party</a>
+</nav>
+
+<section class="hero">
+    <h2>Elegant Office Looks</h2>
+    <p>Simple, comfortable and professional outfit ideas for your workplace.</p>
+</section>
+
+<section class="looks">
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=600&q=80"
+             alt="Formal Office Outfit">
+
+        <div class="card-content">
+            <h3>Formal Look</h3>
+            <p>Blazer, formal shirt and trousers for a smart professional appearance.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=600&q=80"
+             alt="Office Casual Outfit">
+
+        <div class="card-content">
+            <h3>Smart Casual</h3>
+            <p>Comfortable shirt with trousers or jeans for a relaxed office style.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=600&q=80"
+             alt="Professional Office Fashion">
+
+        <div class="card-content">
+            <h3>Professional Look</h3>
+            <p>Choose clean and well-fitted outfits with simple accessories.</p>
+        </div>
+    </div>
+
+</section>
+
+<section class="tips">
+    <h2>Office Look Tips</h2>
+
+    <ul>
+        <li>Choose comfortable and neat clothes.</li>
+        <li>Prefer simple and professional colours.</li>
+        <li>Keep accessories minimal.</li>
+        <li>Wear clean and comfortable footwear.</li>
+        <li>Keep your overall look neat and organized.</li>
+    </ul>
+</section>
+
+<footer>
+    <p>© 2026 Look Create</p>
+    <p>Created by Radhika Kanwar</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
