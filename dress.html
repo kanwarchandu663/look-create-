@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dresses - Look Create</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fff8f5;
+            color: #333;
+        }
+
+        header {
+            background: #8e5a6d;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background: #f3d9df;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #5c3545;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #8e5a6d;
+        }
+
+        .dress-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .dress {
+            width: 230px;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+        }
+
+        .dress .photo {
+            height: 180px;
+            background: #f5e2e7;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+        }
+
+        .dress h2 {
+            color: #8e5a6d;
+        }
+
+        .dress p {
+            line-height: 1.5;
+        }
+
+        button {
+            background: #8e5a6d;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #6f4354;
+        }
+
+        footer {
+            background: #8e5a6d;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>LOOK CREATE 👗</h1>
+    <p>Choose Your Perfect Dress</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="dress.html">Dresses</a>
+    <a href="traditional.html">Traditional</a>
+    <a href="western.html">Western</a>
+    <a href="office.html">Office</a>
+    <a href="party.html">Party</a>
+    <a href="casual.html">Casual</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+
+    <h1>Our Dress Collection</h1>
+
+    <p>
+        Explore different dress styles and create your perfect look.
+    </p>
+
+    <div class="dress-box">
+
+        <div class="dress">
+            <div class="photo">👗</div>
+            <h2>Long Dress</h2>
+            <p>Elegant and comfortable long dress for special occasions.</p>
+            <button onclick="showMessage('Long Dress')">View Look</button>
+        </div>
+
+        <div class="dress">
+            <div class="photo">👚</div>
+            <h2>Kurti</h2>
+            <p>Simple and stylish kurti for everyday and college wear.</p>
+            <button onclick="showMessage('Kurti')">View Look</button>
+        </div>
+
+        <div class="dress">
+            <div class="photo">🥻</div>
+            <h2>Saree</h2>
+            <p>Beautiful traditional saree look for festivals and functions.</p>
+            <button onclick="showMessage('Saree')">View Look</button>
+        </div>
+
+        <div class="dress">
+            <div class="photo">👗</div>
+            <h2>Party Dress</h2>
+            <p>Stylish party outfit for celebrations and special events.</p>
+            <button onclick="showMessage('Party Dress')">View Look</button>
+        </div>
+
+        <div class="dress">
+            <div class="photo">👕</div>
+            <h2>Casual Outfit</h2>
+            <p>Comfortable and trendy outfit for a casual day.</p>
+            <button onclick="showMessage('Casual Outfit')">View Look</button>
+        </div>
+
+        <div class="dress">
+            <div class="photo">✨</div>
+            <h2>Traditional Suit</h2>
+            <p>Graceful traditional suit for cultural and festive occasions.</p>
+            <button onclick="showMessage('Traditional Suit')">View Look</button>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Look Create | Create Your Own Style ✨</p>
+</footer>
+
+<script>
+    function showMessage(dressName) {
+        alert("You selected: " + dressName + " 👗✨");
+    }
+</script>
+
+</body>
+</html>
